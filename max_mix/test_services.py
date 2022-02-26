@@ -30,7 +30,7 @@ def test_customer_service_fails(customer_antonio):
  pero si li donam acces a la bbdd amb @pytest.mark.django_db duplica els resultats
  """
 @pytest.mark.skip
-def test_customer_service_(customer_antonio):
+def test_customer_service_works(customer_antonio):
     result = services.count_customers_use_case(name='Antonio')
     assert result == 1
 
